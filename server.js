@@ -10,6 +10,7 @@ ghost({
 }).then(function (ghostServer) {
 
     parentApp.use('/static', express.static(__dirname + '/public'));
+    parentApp.use('/.well-known', express.static(__dirname + '/.well-known'));
 
     parentApp.use(ghostServer.config.paths.subdir, ghostServer.rootApp);
 
