@@ -52,8 +52,14 @@ config = {
         fileStorage: fileStorage,
         storage: storage,
         database: {
-            client: 'postgres',
-            connection: process.env.DATABASE_URL,
+            client: 'mysql',
+            connection: {
+                host     : process.env.MYSQL_HOST,
+                user     : process.env.MYSQL_USER,
+                password : process.env.MYSQL_PASSWORD,
+                database : process.env.MYSQL_DB,
+                charset  : 'utf8'
+            },
             debug: false
         },
         server: {
@@ -69,9 +75,17 @@ config = {
     development: {
         url: 'http://localhost:2368',
         database: {
-            client: 'sqlite3',
+            /* client: 'sqlite3',
             connection: {
                 filename: path.join(__dirname, '/content/data/ghost-dev.db')
+            },*/
+            client: 'mysql',
+            connection: {
+                host     : '127.0.0.1',
+                user     : 'root',
+                password : 'flamingo',
+                database : 'ghost',
+                charset  : 'utf8'
             },
             debug: false
         },

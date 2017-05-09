@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "postinstall": "./postinstall.sh",
-    "start": "heroku-node-settings server.js --production"
+    "start": "heroku-node-settings production.js --production"
   },
   "repository": {
     "type": "git",

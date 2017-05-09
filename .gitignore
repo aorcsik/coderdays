@@ -5,7 +5,7 @@ npm-debug.log*
 
 content/themes/casper/
 
-content/data/ghost-dev.db
+content/data/*
 
 public/prism.js
 
