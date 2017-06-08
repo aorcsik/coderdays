@@ -2,9 +2,9 @@
 # yarn lockfile v1
 
 
-"Casper@git://github.com/aorcsik/Casper.git#8604369ab4c51b7f40230730913b399b350e5ef5":
+"Casper@git://github.com/aorcsik/Casper.git#76cd74467869605bc9ddd1761f073c27a725ccc8":
   version "1.3.6"
-  resolved "git://github.com/aorcsik/Casper.git#8604369ab4c51b7f40230730913b399b350e5ef5"
+  resolved "git://github.com/aorcsik/Casper.git#76cd74467869605bc9ddd1761f073c27a725ccc8"
 
 JSONSelect@0.4.0:
   version "0.4.0"
